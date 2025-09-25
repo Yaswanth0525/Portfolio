@@ -30,3 +30,36 @@ export interface Testimonial {
   content: string;
   avatar: string;
 }
+
+export interface Certification {
+  id: string;
+  title: string;
+  issuer: string;
+  date: string;
+  credentialUrl?: string;
+}
+
+export interface Publication {
+  id: string;
+  title: string;
+  venue: string;
+  date: string;
+  link?: string;
+}
+
+export interface Award {
+  id: string;
+  title: string;
+  description?: string;
+  date?: string;
+}
+
+export interface CodingStats {
+  totalQuestions?: number;
+  totalActiveDays?: number;
+  totalContests?: number;
+  leetcodeContests?: number;
+  codechefContests?: number;
+  fundamentalsSolved?: number;
+  dsaSolved?: { easy: number; medium: number; hard: number };
+}

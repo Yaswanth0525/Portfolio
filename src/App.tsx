@@ -5,9 +5,10 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Timeline from './components/Timeline';
-import Testimonials from './components/Testimonials';
+// import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 // import Footer from './components/Footer';
+import Achievements from './components/Achievements';
 
 function App() {
   return (
@@ -18,8 +19,9 @@ function App() {
         <About />
         <Skills />
         <Projects />
+        <Achievements />
         <Timeline />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       {/* <Footer /> */}

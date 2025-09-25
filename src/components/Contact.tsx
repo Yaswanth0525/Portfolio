@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { EnvelopeIcon, PhoneIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import { 
-  FaGithub, 
-  FaLinkedin, 
-  FaTwitter, 
-  FaInstagram,
-  FaDiscord 
+import {
+  FaGithub,
+  FaLinkedin,
 } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
@@ -28,13 +25,13 @@ const Contact: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitStatus('success');
       setFormData({ name: '', email: '', message: '' });
-      
+
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 3000);
@@ -91,9 +88,9 @@ const Contact: React.FC = () => {
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">
                 Let's Connect
               </h3>
-              
+
               <div className="space-y-6 mb-8">
-                <motion.div 
+                <motion.div
                   className="flex items-center space-x-4"
                   whileHover={{ x: 10 }}
                   transition={{ duration: 0.2 }}
@@ -107,7 +104,7 @@ const Contact: React.FC = () => {
                   </div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="flex items-center space-x-4"
                   whileHover={{ x: 10 }}
                   transition={{ duration: 0.2 }}
@@ -121,7 +118,7 @@ const Contact: React.FC = () => {
                   </div>
                 </motion.div>
 
-                <motion.div 
+                <motion.div
                   className="flex items-center space-x-4"
                   whileHover={{ x: 10 }}
                   transition={{ duration: 0.2 }}
@@ -221,13 +218,12 @@ const Contact: React.FC = () => {
                 <motion.button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${
-                    isSubmitting
-                      ? 'bg-gray-400 cursor-not-allowed'
-                      : submitStatus === 'success'
+                  className={`w-full py-3 px-6 rounded-lg font-semibold transition-all duration-300 ${isSubmitting
+                    ? 'bg-gray-400 cursor-not-allowed'
+                    : submitStatus === 'success'
                       ? 'bg-green-600 hover:bg-green-700'
                       : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700'
-                  } text-white shadow-lg hover:shadow-xl`}
+                    } text-white shadow-lg hover:shadow-xl`}
                   whileHover={{ scale: isSubmitting ? 1 : 1.02 }}
                   whileTap={{ scale: isSubmitting ? 1 : 0.98 }}
                 >

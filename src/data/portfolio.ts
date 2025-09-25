@@ -1,4 +1,4 @@
-import { Project, Experience} from '../types';
+import { Project, Experience } from '../types';
 
 export const projects: Project[] = [
   {
@@ -47,6 +47,32 @@ export const experiences: Experience[] = [
     type: 'education'
   }
 ];
+
+// Updated Certifications & Publications
+export const certifications = [
+  { id: 'c1', title: 'ServiceNow Certified Application Developer (CAD)', issuer: 'ServiceNow', date: 'Jun 2025', credentialUrl: 'https://drive.google.com/file/d/1Sa1gOKnhgYBm9S0sd3TzkxIcCbVHi9AO/view?usp=drivesdk' },
+  { id: 'c2', title: 'ServiceNow Certified System Administrator (CSA)', issuer: 'ServiceNow', date: 'Mar 2025', credentialUrl: 'https://drive.google.com/file/d/1g8OdchL00sSIbpZRmRYCi9W5rCTxXxdN/view?usp=drivesdk' },
+  { id: 'c3', title: 'AWS Academy Graduate: Cloud Foundations', issuer: 'Amazon Web Services (AWS Academy)', date: 'Nov 2024', credentialUrl: 'https://drive.google.com/file/d/1LGd6UQuIlDeamXqBOHdeziDQEjp8Dfdm/view?usp=drivesdk' },
+];
+
+export const publications = [
+  { id: 'p1', title: 'Deep Learning for Real-Time Object Detection in Autonomous Vehicles', venue: 'International Journal of Research Publication and Reviews (IJRPR)', date: 'Dec 2024', link: '' },
+];
+
+export const awards = [
+  { id: 'a1', title: 'LeetCode 500+ Problems', description: 'Milestone for problem solving' },
+  { id: 'a2', title: '100 Days Streak', description: 'Maintained 100-day coding streak' },
+];
+
+export const codingStats = {
+  totalQuestions: 814,
+  totalActiveDays: 345,
+  totalContests: 43,
+  leetcodeContests: 7,
+  codechefContests: 36,
+  fundamentalsSolved: 7,
+  dsaSolved: { easy: 120, medium: 148, hard: 7 },
+};
 
 
 
