@@ -37,9 +37,8 @@ const Hero: React.FC = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
             >
-              Full-Stack & Cloud Computing Engineer
+            Full-Stack Web Developer & Cloud Engineer
             </motion.h2>
-
             <motion.p
               className="max-w-2xl text-base sm:text-lg text-gray-600 dark:text-gray-400 mb-10 leading-relaxed text-left"
               initial={{ opacity: 0, y: 20 }}
