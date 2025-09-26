@@ -115,7 +115,7 @@ const About: React.FC = () => {
 
               {/* Resume Download */}
               <motion.a
-                href="https://drive.google.com/file/d/1yjM0AVRwADuLUTpE1MqLMZ0wUnZTdrIb/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1MnBfsGKXcBhebEQM25ea2juCco086tqb/view?usp=drivesdk"
                 download
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-400 to-cyan-400 text-gray font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}

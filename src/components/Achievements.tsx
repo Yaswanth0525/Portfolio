@@ -48,7 +48,7 @@ const Achievements: React.FC = () => {
                         <div className="space-y-8">
                             <motion.div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg" variants={item}>
                                 <div className="flex items-center justify-between mb-4">
-                                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Coding Stats</h3>
+                                    <h3 className="text-xl font-semibold text-gray-900 dark:text-white">LeetCode Stats</h3>
                                     {lcLoading && <span className="text-xs text-gray-500">Updating…</span>}
                                 </div>
                                 <div className="grid grid-cols-2 gap-4 text-gray-900 dark:text-gray-100">
@@ -134,6 +134,29 @@ const Achievements: React.FC = () => {
                                         </li>
                                     ))}
                                 </ul>
+                            </motion.div>
+
+                            <motion.div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg" variants={item}>
+                                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Developer Profile</h3>
+                                <div className="p-4 rounded-lg bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 border border-blue-200 dark:border-blue-700/50">
+                                    <div className="flex items-center justify-between">
+                                        <div>
+                                            <p className="font-medium text-gray-900 dark:text-white">Codolio Profile</p>
+                                            <p className="text-sm text-gray-600 dark:text-gray-400">Competitive Programming Portfolio</p>
+                                        </div>
+                                        <a
+                                            href="https://codolio.com/profile/yaswanth_525"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center px-3 py-2 text-sm font-medium text-white bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg hover:from-blue-700 hover:to-purple-700 transition-all duration-200 shadow-sm hover:shadow-md"
+                                        >
+                                            <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                                            </svg>
+                                            Visit
+                                        </a>
+                                    </div>
+                                </div>
                             </motion.div>
                         </div>
                     </div>

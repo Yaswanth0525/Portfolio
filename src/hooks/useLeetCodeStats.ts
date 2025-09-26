@@ -27,10 +27,15 @@ export function useLeetCodeStats(username: string | undefined) {
             setLoading(true);
             setError(null);
             try {
+                console.log(`Fetching LeetCode stats for username: ${username}`);
+                
                 // Using a public community endpoint that mirrors LeetCode profile stats
-                const resp = await fetch(`https://leetcode-stats-api.herokuapp.com/${encodeURIComponent(username)}`);
+                const resp = await fetch(`https://leetcode-stats-api.herokuapp.com/${encodeURIComponent(username!)}`);
                 if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
                 const data = await resp.json();
+                
+                console.log('API response:', data);
+                
                 // Expected fields: totalSolved, easySolved, mediumSolved, hardSolved
                 const next: LeetCodeStats = {
                     totalSolved: Number(data.totalSolved) || 0,
@@ -38,9 +43,13 @@ export function useLeetCodeStats(username: string | undefined) {
                     mediumSolved: Number(data.mediumSolved) || 0,
                     hardSolved: Number(data.hardSolved) || 0,
                 };
+                
+                console.log('Mapped stats:', next);
                 if (!cancelled) setStats(next);
-            } catch (e: any) {
-                if (!cancelled) setError(e?.message || 'Failed to load');
+            } catch (e: unknown) {
+                console.error('LeetCode stats fetch error:', e);
+                const errorMessage = e instanceof Error ? e.message : 'Failed to load';
+                if (!cancelled) setError(errorMessage);
             } finally {
                 if (!cancelled) setLoading(false);
             }

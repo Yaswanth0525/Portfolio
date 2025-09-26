@@ -60,7 +60,7 @@ export const publications = [
 ];
 
 export const awards = [
-  { id: 'a1', title: 'LeetCode 500+ Problems', description: 'Milestone for problem solving' },
+  { id: 'a1', title: 'CodeChef 500+ Problems', description: 'Combined milestone across LeetCode and CodeChef' },
   { id: 'a2', title: '100 Days Streak', description: 'Maintained 100-day coding streak' },
 ];
 
