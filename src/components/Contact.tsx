@@ -136,7 +136,7 @@ const Contact: React.FC = () => {
               {/* Social Links */}
               <div>
                 <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
-                  Follow Me
+                  See Me On
                 </h4>
                 <div className="flex space-x-4">
                   {socialLinks.map((social, index) => (

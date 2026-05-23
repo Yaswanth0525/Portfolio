@@ -24,18 +24,18 @@ export const projects: Project[] = [
 export const experiences: Experience[] = [
   {
     id: '1',
-    title: 'Cloud Computing Intern',
+    title: 'AWS & Cloud Computing Intern',
     company: 'HashTek Solutions, Visakhapatnam',
-    period: 'Jun 2024 – Jul 2024',
-    description: 'Provisioned and maintained AWS EC2 instances and S3 buckets, reducing deployment time by 40%. Designed and implemented IAM policies to enforce least-privilege access, improving security compliance. Automated infrastructure tasks using AWS CLI and CloudFormation scripts.',
+    period: 'Jul 2025 – Oct 2025',
+    description: 'Learned AWS cloud services (EC2, S3, IAM), Docker, CI/CD pipelines, and deployment automation. Gained practical experience in cloud infrastructure, security, monitoring, and DevOps workflows.',
     type: 'work'
   },
   {
     id: '2',
     title: 'B.Tech, Computer Science',
     company: 'GMR Institute of Technology, Rajam',
-    period: 'Aug 2022 – Present',
-    description: 'Currently pursuing Bachelor of Technology in Computer Science with a GPA of 9.1/10. Focus on full-stack development, cloud infrastructure, and DevOps practices.',
+    period: 'Aug 2022 – Apr 2026',
+    description: 'Completed Bachelor of Technology in Computer Science with a GPA of 9.0/10. Focus on full-stack development, cloud infrastructure, and DevOps practices.',
     type: 'education'
   },
   {
@@ -52,11 +52,13 @@ export const experiences: Experience[] = [
 export const certifications = [
   { id: 'c1', title: 'ServiceNow Certified Application Developer (CAD)', issuer: 'ServiceNow', date: 'Jun 2025', credentialUrl: 'https://drive.google.com/file/d/1Sa1gOKnhgYBm9S0sd3TzkxIcCbVHi9AO/view?usp=drivesdk' },
   { id: 'c2', title: 'ServiceNow Certified System Administrator (CSA)', issuer: 'ServiceNow', date: 'Mar 2025', credentialUrl: 'https://drive.google.com/file/d/1g8OdchL00sSIbpZRmRYCi9W5rCTxXxdN/view?usp=drivesdk' },
-  { id: 'c3', title: 'AWS Academy Graduate: Cloud Foundations', issuer: 'Amazon Web Services (AWS Academy)', date: 'Nov 2024', credentialUrl: 'https://drive.google.com/file/d/1LGd6UQuIlDeamXqBOHdeziDQEjp8Dfdm/view?usp=drivesdk' },
+  { id: 'c3', title: 'Full Stack Web Developer Mastery', issuer: 'L&T', date: 'Nov 2025', credentialUrl: 'https://drive.google.com/file/d/1Vqgaw60OQdvI3GYMjx1tE1xK-eALb62A/view?usp=drivesdk' },
+  { id: 'c4', title: 'Comprehensive DevOps and CI/CD Tools Mastery', issuer: 'L&T', date: 'Sep 2025', credentialUrl: 'https://drive.google.com/file/d/1_jGtcOlUJu31tbAV_4dLyj7eGaqdaVPc/view?usp=drivesdk' },
 ];
 
 export const publications = [
   { id: 'p1', title: 'Deep Learning for Real-Time Object Detection in Autonomous Vehicles', venue: 'International Journal of Research Publication and Reviews (IJRPR)', date: 'Dec 2024', link: '' },
+  { id: 'p2', title: 'Enhanced Document Intelligence and Task Handling', venue: 'International Journal of Progressive Research in Engineering Management and Science (IJPREMS)', date: 'Mar 2026', link: '' },
 ];
 
 export const awards = [

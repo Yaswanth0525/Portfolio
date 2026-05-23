@@ -70,7 +70,7 @@ const About: React.FC = () => {
                 </h3>
                 <div className="space-y-2 text-gray-600 dark:text-gray-300">
                   <p>📍 Based in Parvathipuram, India</p>
-                  <p>🎓 B.Tech Computer Science - 9.1 GPA</p>
+                  <p>🎓 B.Tech Computer Science - 9.0 GPA</p>
                   <p>💻 Full-Stack Developer</p>
                   <p>☁️ AWS Cloud Computing</p>
                 </div>
@@ -81,7 +81,7 @@ const About: React.FC = () => {
             <motion.div variants={itemVariants}>
               <div className="prose prose-lg dark:prose-invert max-w-none">
                 <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
-                  Motivated Computer Science student with a 9.1 GPA at GMR Institute of Technology 
+                  Motivated Computer Science student with a 9.0 GPA at GMR Institute of Technology 
                   and hands-on experience in full-stack development, cloud infrastructure, and DevOps. 
                   I'm passionate about creating impactful solutions and optimizing system performance.
                 </p>
@@ -115,14 +115,14 @@ const About: React.FC = () => {
 
               {/* Resume Download */}
               <motion.a
-                href="https://drive.google.com/file/d/1MnBfsGKXcBhebEQM25ea2juCco086tqb/view?usp=drivesdk"
+                href="https://drive.google.com/file/d/1Yh2yHrzhfLjM66UDeZcNcc9JVE3WLX5S/view?usp=drivesdk"
                 download
                 className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-cyan-400 to-cyan-400 text-gray font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
                 <DocumentArrowDownIcon className="w-5 h-5 mr-2" />
-                Download Resume
+                My Resume
               </motion.a>
             </motion.div>
           </div>
